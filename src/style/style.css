@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes cloud{
+    0%{
+         position: absolute;
+         top: 26%;
+         left: 91%;
+         transition-delay: 0s;
+
+    }
+
+    50%{
+         position: absolute;
+         top: 26%;
+         left: 50%;
+          
+         
+    }
+    75%{
+         position: absolute;
+         top: 13%;
+         left: 26%;
+        
+    }
+    100%{
+         position: absolute;
+         top: 26%;
+         left: 0%;
+         transition-delay:1s ;
+    }
+    
+}
+
+@keyframes cloud-two{
+    0%{
+         position: absolute;
+         top: 6%;
+         left: 0%;
+         transition-delay: 2s;
+
+    }
+    25%{
+         position: absolute;
+         top: 16%;
+         left: 25%;
+    }
+    50%{
+         position: absolute;
+         top: 37%;
+         left: 50%;
+         
+    }
+    75%{
+         position: absolute;
+         top: 33%;
+         left: 75%;
+         
+        
+    }
+    100%{
+         position: absolute;
+         top: 36%;
+         left: 91%;
+         transition-delay:1s ;
+    }
+
+} 
+
+
+@keyframes sun{
+    0%{
+         position: absolute;
+         top: 0%;
+         left: 55%;
+         box-shadow: 5px 8px 10px 2px yellow;
+         
+        
+
+    }
+    10%{
+         position: absolute;
+         top: 3%;
+         left: 55%;
+         box-shadow: 4px 7px 4px 10px yellow;
+
+
+    }
+    15%{
+         position: absolute;
+         top: 5%;
+         left: 55%;
+         box-shadow: px 3px 3px 8px yellow;
+
+    }
+    18%{
+         position: absolute;
+         top: 5%;
+         left: 55%;
+         box-shadow: 2px 2px 2px 5px yellow;
+
+    }
+    25%{
+        
+         position: absolute;
+         top: 20%;
+         left: 55%;
+
+         
+    }
+    50%{
+         position: absolute;
+         top: 30%;
+         left: 55%;
+
+         
+         
+    }
+    75%{
+         position: absolute;
+         top: 40%;
+         left: 55%;
+         background-color: yellow;
+
+
+         
+         
+        
+    }
+    90%{
+         position: absolute;
+         top: 58%;
+         left: 55%;
+         background-color: rgba(211, 25, 25, 0.452);
+         transition-delay: 1s;
+    }
+    95%{
+         position:absolute;
+         top: 60%;
+         left: 55%;
+        
+         background-color: rgba(129, 26, 26, 0.733);
+
+    }
+   
+    100%{
+         position:absolute;
+         top: 90%;
+         left: 55%;
+         transition-delay:0s ;
+         transition-duration: 0s;
+         background-color: transparent;
+
+        
+    }
+}
+    @keyframes moon {
+         0%{
+              background-color: #92C7CF;
+
+         }
+         25%{
+              background-color: #92C7CF;
+         }
+         50%{
+              background-color: #92C7CF;
+         }
+
+         75%{
+              background-color:rgba(128, 128, 128, 0.432) ;
+         }
+         91%{
+              background-color: rgb(58, 56, 56);
+         }
+         100%{
+              background-color: rgba(0, 0, 0, 0.425);
+         }
+         
+    }
+    @keyframes watch{
+         0%{
+              position: absolute;
+              top: 62%;
+              left: 6.3%;
+              transform: rotate(90deg);
+              
+         }
+         25%{
+              position: absolute;
+              top: 66.5%;
+              left: 8.5%;
+              transform: rotate(180deg);
+              
+
+         }
+         50%{
+              position: absolute;
+              top: 71.3%;
+              left: 6.25%;
+              transform: rotate(270deg);
+              
+
+         }
+         75%{
+              position: absolute;
+              top: 66.5%;
+              left: 4%;
+              transform: rotate(360deg);
+              
+
+         }
+         
+         100%{
+              position: absolute;
+              top: 62%;
+              left: 6.3%;
+              transform: rotate(450deg);
+              
+
+         }
+    }
+    
+
+body{
+    width: 100%;
+    height: 100%;
+    
+    animation: moon 15.3s linear 1s infinite normal;
+}     
+.mountain,.mountain-one{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+   border-top: 300px solid transparent;
+   border-right: 300px solid transparent;
+   border-left: 300px solid transparent;
+   border-bottom: 300px solid #5f411e ;  
+}
+.mountain-one{ 
+    width: 0px;
+    height: 0px;
+   
+   border-top: 300px solid transparent;
+   border-right: 300px solid transparent;
+   border-left: 300px solid transparent;
+   border-bottom: 300px solid #5f411e ;
+   
+     position: absolute;
+     top: 6%;
+     left: 11.5%;
+     
+}
+.mountain-two{
+    width: 0;
+    height: 0;
+    border-top:230px solid transparent ;
+    border-right:230px  solid transparent;
+    border-left:230px solid transparent ;
+    border-bottom:230px solid #5f411e;
+    position: absolute;
+    top: 24%;
+    left: 35.5%;
+
+}
+.cloud-one,.cloud-two{ 
+    width: 110px;
+    height: 110px;
+    background-color: #E5E1DA;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    animation: cloud 12s linear 1s infinite alternate;
+    box-shadow: 0 10px 5px -7px gray,
+         76px 1px 0px -3px #E5E1DA,
+         79px 3px 7px -5px gray,
+
+         -76px 1px 0px -3px #E5E1DA,
+         -79px 3px 7px -5px gray,
+
+         -10px -27px 0px 9px #E5E1DA,
+         -13px -30px 7px 7px gray,
+         
+
+         50px -20px 0px -16px #E5E1DA,
+         52px -23px 7px -18px gray 
+    ;        
+    
+}
+.cloud-two{
+    position: absolute;
+    top: 26%;
+    left: 91%;
+    z-index: -3;
+    animation:cloud-two 12s linear 1s infinite alternate;
+}
+.sun{
+    width: 155px;
+    height: 155px;
+    animation:sun 8s ease 0s infinite alternate-reverse ;
+    background-color: yellow;
+    border-radius: 60%;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    z-index: -2;    
+}
+.watch{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 1px 1px 3px 4px white;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+}
+.watch-one{
+    width: 4.5%;
+    height: 3.8px;
+    background-image: linear-gradient( 90deg ,  blue ,white  );
+    animation:watch 8s linear 0.4s infinite normal ;
+    position: absolute;
+    top: 62%;
+    left: 6.3%;
+    transform: rotate(90deg);
+}
+.hand{
+    width: 13px;
+    height: 13px;
+    background-color: #E5E1DA;
+    border-radius: 50%;
+    position: absolute;
+    top: 66%;
+    left: 8.1%;
+}
+.watch-two{
+    width: 30px;
+    height: 30px;
+    border-radius: 45%;
+    background-color:rgb(49, 49, 49);
+    position: absolute;
+    top: 50.8%;
+    left: 7.4%;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E5E1DA;
+    position: absolute;
+    top: 51.7%;
+    left: 7.75%;
+}
+
+.container{
+    width: 40%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    margin-left: 30%;
+    margin-top: 14%;
+    gap: 10px;
+
+}
+.container input{
+    width: 160px; 
+    height: 30px;
+}
+.container button{
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+button:hover{
+    background-color: chocolate;
+    color: white;
+}
